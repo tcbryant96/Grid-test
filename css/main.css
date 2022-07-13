@@ -1,0 +1,22 @@
+
+.container {  
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 2fr 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Nav-bar Nav-bar Nav-bar Nav-bar Nav-bar Nav-bar"
+      ". profile-pic prof-info prof-info prof-info prof-info"
+      ". posts posts posts posts posts";
+  }
+  
+  .Nav-bar { grid-area: Nav-bar; }
+  
+  .profile-pic { grid-area: profile-pic; }
+  
+  .prof-info { grid-area: prof-info; }
+  
+  .posts { grid-area: posts; }
+  
