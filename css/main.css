@@ -8,8 +8,8 @@
     grid-auto-flow: row;
     grid-template-areas:
       "Nav-bar Nav-bar Nav-bar Nav-bar Nav-bar Nav-bar"
-      ". profile-pic prof-info prof-info prof-info prof-info"
-      ". posts posts posts posts posts";
+      ". profile-pic prof-info prof-info prof-info prof-info "
+      ". posts posts posts posts posts ";
   }
   
 .Nav-bar { 
@@ -47,13 +47,28 @@
 
 }
 
-.container > div{
+/*.container > div{
 border: 1px solid black;
-}
+}*/
 .Nav-bar a{
     text-decoration: none;
     color:white;
 }
 .Nav-bar a:hover{
-    color:aqua
+    color:blue;
+}
+.post-card{
+    border: 1px solid black;
+    padding: 1vh;
+}
+.card-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-links a{
+    text-decoration: none;
+    color: black
+}
+.card-links a:hover{
+    color:blue;
 }
