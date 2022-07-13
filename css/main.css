@@ -1,9 +1,9 @@
 
 .container {  
-    height:100vh;
+    min-height:100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10% 2fr 3fr;
+    grid-template-rows: 10vh 2fr 3fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -12,11 +12,39 @@
       ". posts posts posts posts posts";
   }
   
-  .Nav-bar { grid-area: Nav-bar; }
-  
-  .profile-pic { grid-area: profile-pic; }
-  
-  .prof-info { grid-area: prof-info; }
-  
-  .posts { grid-area: posts; }
-  
+.Nav-bar { 
+    grid-area: Nav-bar; 
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+   align-items: center;
+   position: sticky;
+   top: 0px;
+}
+
+.profile-pic { 
+    grid-area: profile-pic;
+    display:flex;
+    align-items: center;
+ }
+
+#profpic{
+    width:100%;
+    height:auto;
+}
+ .prof-info { grid-area: prof-info; }
+
+.posts { grid-area: posts; 
+
+}
+
+.container > div{
+border: 1px solid black;
+}
+.Nav-bar a{
+    text-decoration: none;
+    color:white;
+}
+.Nav-bar a:hover{
+    color:aqua
+}
